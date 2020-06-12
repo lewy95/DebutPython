@@ -19,3 +19,5 @@ if has_ticket:
 # 如果没有车票，不允许进门
 else:
     print("大哥，您要先买票啊")
+
+

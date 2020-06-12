@@ -2,7 +2,7 @@
 fcb = {"brand": "bayern",
        "address": "sebera",
        "boss": "heneisi",
-       "champion": True
+       "champion": True,
        }
 
 print(fcb)
@@ -21,4 +21,3 @@ print(fcb.keys()) # dict_keys(['brand', 'address', 'champion'])
 print(len(fcb)) # 3
 
 print(type(str(fcb)))
-
