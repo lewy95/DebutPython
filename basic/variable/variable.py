@@ -19,13 +19,19 @@ print(money)
 x = y = z = 10099
 a, b, c = 1, 2, "haha"
 print(type(c))  # <class 'str'>
+# id()函数查看变量的内存地址
+print(id(c))  # 2832763712432
+c = 123
+print(id(c))  # 140709509824576
 
 # about num
 i = 9
 f1 = 9.15
 f2 = -9.15
+f3 = 2.5e2
+print(f3 * 102) # 测试浮点数的科学计数法
 print(max(2, 3, 1, 6))
-print(pow(2, 3)) # 8\
+print(pow(2, 3))  # 8\
 print(round(9.82, 1))
 print(math.ceil(f1))  # 10 向上取整
 print(math.exp(2))  # 7.38905609893065 e的平方
@@ -51,6 +57,10 @@ print(r"lewy \n anna")  # 不转义
 print("My name is %s and weight is %d kg!" % ('krala', 21))
 
 rawRange = range(10)
+print(type(rawRange))
 myTuple = tuple(rawRange)
 print(myTuple)
+
+
 # 得 (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+
