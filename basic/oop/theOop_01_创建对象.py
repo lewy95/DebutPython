@@ -9,12 +9,16 @@ class Cat:
 
 # 创建猫对象
 tom1 = Cat()
+tom3 = tom1
 print(tom1)  # <__main__.Cat object at 0x10f008ad0>
+print(tom3)  # <__main__.Cat object at 0x10f008ad0>
+print(tom1 == tom3) # True
 tom2 = Cat()
 print(tom2)  # <__main__.Cat object at 0x10f0f3bd0>
 print(tom1 == tom2) # False
-print("%x" % id(tom1))
-print("%x" % id(tom2))
+print("%x" % id(tom1))  # 0x10f008ad0
+print("%x" % id(tom2))  # 0x10f0f3bd0
+print("%x" % id(tom3))  # 0x10f008ad0
 
 tom1.eat()
 tom2.drink()

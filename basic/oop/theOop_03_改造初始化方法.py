@@ -1,4 +1,7 @@
-class Cat:
+class Cat3:
+
+    def __init__(self, name):
+        self.name = name
 
     def eat(self):
         # 哪一个对象调用的方法，self就是哪一个对象的引用
@@ -8,12 +11,9 @@ class Cat:
         print("%s 要喝水" % self.name)
 
 
-# 创建猫对象
-tom = Cat()
+# 创建两个猫对象
+tom3 = Cat3("橘猫")
+tom4 = Cat3("无毛猫")
 
-# 可以使用　.属性名　利用赋值语句就可以了
-# tom.name = "Tom"
-
-tom.eat()
-tom.drink()
-tom.name = "Tom"
+tom3.eat()  # 橘猫 爱吃鱼
+tom4.eat()  # 无毛猫 爱吃鱼

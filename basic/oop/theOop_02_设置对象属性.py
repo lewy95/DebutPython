@@ -1,4 +1,7 @@
-class Cat:
+class Cat2:
+
+    def __init__(self):
+        self.name = "加菲猫"
 
     def eat(self):
         # 哪一个对象调用的方法，self就是哪一个对象的引用
@@ -9,10 +12,10 @@ class Cat:
 
 
 # 创建两个猫对象
-tom3 = Cat()
+tom3 = Cat2()
+tom4 = Cat2()
 
-tom4 = Cat()
+tom4.name = "无毛猫"
 
-tom4.name = "大懒猫"
-
-tom4.eat()
+tom3.eat()  # 加菲猫 爱吃鱼
+tom4.eat()  # 无毛猫 爱吃鱼
