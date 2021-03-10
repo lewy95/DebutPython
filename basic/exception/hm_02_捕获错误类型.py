@@ -1,12 +1,35 @@
-try:
-    # 提示用户输入一个整数
-    num = int(input("输入一个整数："))
+# try:
+#     # 提示用户输入一个整数
+#     num = int(input("输入一个整数："))
+#
+#     # 使用 8 除以用户输入的整数并且输出
+#     result = 8 / num
+#
+#     print(result)
+# except ZeroDivisionError:
+#     print("除0错误")
+# except ValueError:
+#     print("请输入正确的整数")
 
-    # 使用 8 除以用户输入的整数并且输出
-    result = 8 / num
+# def divisors(N: int) -> List[int]:
+#     if N == 1:
+#         return [1]
+#     res = [1, N]
+#     sqrt = int(pow(N, 1 / 2))
+#     for i in range(2, sqrt + 1):
+#         if N % i == 0:
+#             res.append(i)
+#             res.append(N // i)
+#     if sqrt ** 2 == N:
+#         res.append(sqrt)
+#     return res
+#
+# print(sorted(divisors(30)))
 
-    print(result)
-except ZeroDivisionError:
-    print("除0错误")
-except ValueError:
-    print("请输入正确的整数")
+for i in range(1, 10000):
+    num = 0
+    for k in range(1, i):
+        if i % k == 0:
+            num += k
+    if i == num:
+        print(i)
